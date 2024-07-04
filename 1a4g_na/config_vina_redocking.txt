@@ -9,4 +9,6 @@ size_x = 20
 size_y = 20
 size_z = 20
 
-out = docking_results_redocking_ligand.pdbqt
+exhaustiveness = 1000
+
+out = docking_results_redocking_ligand_exhaustiveness_1000.pdbqt
