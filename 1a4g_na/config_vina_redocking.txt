@@ -1,0 +1,12 @@
+receptor = receptor.pdbqt
+ligand = redocking_ligand1.pdbqt
+
+center_x = -3
+center_y = 56
+center_z = -8
+
+size_x = 20
+size_y = 20
+size_z = 20
+
+out = docking_results_redocking_ligand.pdbqt
