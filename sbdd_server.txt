@@ -1,0 +1,19 @@
+#Fenster öffnen
+ssh ibminode06
+
+#setup
+source /thiel/source_miniconda3
+conda activate sbdd24-py310
+
+screen -dmS test
+screen -r test
+
+# molekül runterladen und zu .pdbqt umwandeln
+python3.10 download.py
+
+#1a4g_h.pdb ist in pymol (remove notpolymer) cleand und gespeichert als .cif
+obabel 1a4g_h.cif -xr -O 1a4g-receptor.pdbqt
+obabel na-ligands.sdf -O ./ligands/ligand_.pdbqt -m -xh
+
+#docken der ligands
+bash run_vina.sh
