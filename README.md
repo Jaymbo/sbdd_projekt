@@ -14,6 +14,15 @@ selection: receptor/obj01
 optionen alle deaktivieren
 speichern als .cif
 
+## lokales setup
+in powershell
+```
+wsl --install -d Ubuntu
+#einrichtung abschließen
+sudo apt install miniconda3
+conda install -c conda-forge vina
+conda install openbabel
+```
 
 ## server setup
 ```
@@ -21,13 +30,19 @@ ssh ibmstud0*@sshgw.cs.uni-tuebingen.de
 ssh ibminode06
 source /thiel/source_miniconda3
 conda activate sbdd24-py310
+```
 
+### Daten laden
+```
 cd sbdd_projekt
 cp  config_vina_template.txt config_vina.txt 
 nano 1a4g_na/config_vina.txt
 cd 1a4g_na
 obabel receptor.cif -xr -O receptor.pdbqt
 ```
+
+
+
 config anpassen mit Koordinaten aus Pymol
 
 ## Docking
