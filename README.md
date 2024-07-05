@@ -1,5 +1,9 @@
 # sbdd_projekt
 
+vorbereitung mit Pymol,
+konvertierung mit openbabel (obabel),
+Docking mit Autodock vina
+
 
 ## Vorarbeit
 in pymol sauber machen und speichern als .cif und auf server übertragen in den Ordner mit dem molekülname
