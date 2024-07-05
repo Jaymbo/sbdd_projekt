@@ -10,9 +10,16 @@ cmd.create(None,"sele",zoom=0)
 print cmd.get_coords('sele', 1)
 ```
 File>Export Struckture>Export Molecule
-selection: receptor/obj01
+selection: obj01
 optionen alle deaktivieren
-speichern als .cif
+speichern als redocking_ligand.cif
+```
+remove not polymer
+```
+File>Export Struckture>Export Molecule
+selection: 1a4g
+optionen alle deaktivieren
+speichern als receptor.cif
 
 ## lokales setup
 in powershell
